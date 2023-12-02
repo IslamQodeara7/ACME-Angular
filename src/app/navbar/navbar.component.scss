@@ -1,0 +1,19 @@
+@import "./../colors";
+
+
+.navbar{
+ background-color: $clr1;
+ box-shadow: 5px 10px 15px $clr4;
+ .nav-link{
+    color: $clr4;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover{
+        color: $clr3;
+    }
+ }
+ .navbar-brand{
+    color: $clr4;
+    cursor: pointer;
+ }   
+}

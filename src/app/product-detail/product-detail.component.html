@@ -1,0 +1,39 @@
+<h1 class="text-center my-5">user details</h1>
+
+
+<div class="row mx-auto">
+    <div class="col-md-6 detailsItem px-2">
+<div class="item">
+    <div class="one px-1">Name: </div>
+    <div class="two px-1">{{list[num-1].name}}</div>
+</div>
+    </div>
+    <div class="col-md-6 detailsItem px-2">
+<div class="item">
+    <div class="one px-1">Age: </div>
+    <div class="two px-1">{{list[num-1].age}}</div>
+</div>
+    </div>
+    <div class="col-md-6 detailsItem px-2">
+<div class="item">
+    <div class="one px-1">Email: </div>
+    <div class="two px-1">{{list[num-1].email}}</div>
+</div>
+    </div>
+    <div class="col-md-6 detailsItem px-2">
+<div class="item">
+    <div class="one px-1">Gender: </div>
+    <div class="two px-1">{{list[num-1].gender}}</div>
+</div>
+    </div>
+    <div class="col-md-6 detailsItem px-2">
+<div class="item">
+    <div class="one px-1">Rating: </div>
+    <div class="two px-1"><app-stars [cropWidth]="list[num-1].rate/5*100"></app-stars></div>
+</div>
+    </div>
+</div>
+
+<div (click)="backto()" class="close mx-auto">
+    <i class="fa-solid fa-xmark"></i>
+</div>

@@ -1,0 +1,80 @@
+@import "../colors";
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid $clr3;
+    cursor: pointer;
+    background-color: $clr3;
+    transition: all .5s;
+
+    &:hover {
+        background-color: $clr3;
+        border-color: $clr2;
+
+        i {
+            color: $clr2;
+        }
+
+    }
+
+    i {
+        font-size: 30px;
+        color: $clr4;
+    }
+}
+
+
+h1 {
+    text-shadow: 5px 10px 10px $clr3;
+    color: $clr3;
+}
+
+
+.detailsItem {
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: 2px solid $clr4;
+        overflow: hidden;
+        margin: 50px 0px;
+        cursor: pointer;
+
+        &:hover {
+            .one {
+                background-color: $clr3;
+                color: $clr2;
+
+            }
+
+            .two {
+                background-color: $clr2;
+                color: $clr3;
+            }
+        }
+
+        .one {
+            text-align: center;
+            background-color: $clr2;
+            color: $clr3;
+            width: 50%;
+            padding: 20px 0px;
+            transition: all .5s;
+        }
+
+        .two {
+            text-align: center;
+            background-color: $clr3;
+            color: $clr2;
+            width: 50%;
+            padding: 20px 0px;
+            transition: all .5s;
+        }
+    }
+}

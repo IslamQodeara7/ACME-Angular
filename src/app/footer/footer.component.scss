@@ -1,0 +1,69 @@
+@import "./../colors";
+
+.footer {
+    background-color: $clr1;
+    box-shadow: -5px -10px 15px $clr4;
+
+    h2 {
+        color: $clr4;
+    }
+
+    .contactIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contactIconItem {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 2px solid $clr3;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                .icon1 {
+                    top: 0%;
+                }
+
+                .icon2 {
+                    top: 100%;
+                }
+            }
+        }
+
+        .icon1,
+        .icon2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+
+        .icon1 {
+            position: absolute;
+            top: -100%;
+            background-color: $clr4;
+
+            a {
+                color: $clr1;
+            }
+        }
+
+        .icon2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $clr1;
+
+            color: $clr4;
+        }
+
+    }
+}

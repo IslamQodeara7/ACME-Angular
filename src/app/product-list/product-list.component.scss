@@ -1,0 +1,61 @@
+@import "./../colors";
+
+
+.productList
+{
+  th{
+    color: $clr3;
+  }
+  
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    color: $clr4;
+    border: 2px solid $clr4;
+    border-radius: 15px;
+    input{
+      outline: none;
+      border: none;
+      color: $clr4;
+      &::placeholder{
+        color: $clr3;
+      }
+    }
+
+  }
+  .showIDButton{
+    border: 2px solid $clr4;
+    color: $clr4;
+    transition: all .5s;
+    background-color: $clr1;
+    &:hover{
+      color: $clr1;
+      background-color: $clr4;
+    }
+  }
+}
+
+
+
+.row1{
+  background-color: $clr4 ;
+  color: $clr1 ;
+  a{
+    background-color: $clr4 ;
+    color: $clr1 ;
+  }
+}
+.row2{
+  background-color: $clr1 ;
+  color: $clr4 ;
+  a{
+    background-color: $clr1 ;
+    color: $clr4 ;
+  }
+}
+
+
+
